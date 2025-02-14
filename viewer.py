@@ -210,6 +210,14 @@ class Viewer:
         if server_config_fun is not None:
             server_config_fun(self, server)
 
+        ### attach here!!!
+        from pyngrok import ngrok
+        authtoken = "your authtoken"
+        ngrok.set_auth_token(authtoken)
+        public_url = ngrok.connect(self.port)
+        print(f"ngrok tunnel URL: {public_url}")
+        ###
+        
         tabs = server.add_gui_tab_group()
         if tab_config_fun is not None:
             tab_config_fun(self, server, tabs)
