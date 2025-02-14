@@ -10,9 +10,3 @@ scikit-image==0.21.0
 tqdm==4.66.2
 trimesh==4.3.2
 pyngrok
-viser==0.1.29 
-splines 
-lightning 
-plyfile
-2d_gaussian_splatting/submodules/diff-surfel-rasterization
-2d_gaussian_splatting/submodules/simple-knn
